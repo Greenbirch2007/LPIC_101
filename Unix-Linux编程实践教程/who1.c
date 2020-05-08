@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<utmp.h>
-
+#include<fcntl.h>
 #include<unistd.h>
 
 
