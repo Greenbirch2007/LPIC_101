@@ -1,0 +1,23 @@
+批量修改文件名
+
+例如，去掉文件名中的test:
+
+rename  -n 's/[test]//g' *.jpg
+
+S///代表替换 
+
+[ test ]代表匹配文件名中的字符串test
+
+g 代表匹配全部
+
+批量增加后缀
+
+for i in * ; do mv $i $i".jpg" ; done   #为文件增加.jpg后缀
+
+批量修改后缀
+
+rename   's/\.png/.jpg/'    *.png    #把png修改为jpg
+
+批量递增修改数字编号文件
+
+i=1; for x in *; do mv $x $i.jpg; let i=i+1; done
