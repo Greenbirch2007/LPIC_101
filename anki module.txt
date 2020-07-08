@@ -1,0 +1,7 @@
+.card {
+ font-family:"monospace";
+ font-size: 22px;
+ text-align: center;
+ color: black;
+ background-color: #C7EDCC ;
+}
