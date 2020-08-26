@@ -21,3 +21,8 @@ rename   's/\.png/.jpg/'    *.png    #把png修改为jpg
 批量递增修改数字编号文件
 
 i=1; for x in *; do mv $x $i.jpg; let i=i+1; done
+
+i=1; for x in *; do mv $x $i.jpg; let i=i+1; done
+
+ find ./ -name "*.mp3" | awk -F "." '{print $2}' | xargs -i -t mv ./{}.mp3  ./{}
+
